@@ -21,11 +21,29 @@ var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or p
     "body": "{{ page.date | date: "%Y/%m/%d" }} - {{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
     }{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
 
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+
+        if (pair[0] === variable) {
+            return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
+        }
+    }
+}
+
 function trimmerEnKo(token) {
     return token
         .replace(/^[^\w가-힣]+/, '')
         .replace(/[^\w가-힣]+$/, '');
 };
+
+var searchTerm = getQueryVariable('query');
+
+if (searchTerm) {
+    document.getElementById('search-box').setAttribute("value", searchTerm);
 
 var idx = lunr(function () {
     this.pipeline.reset();
@@ -99,3 +117,4 @@ $(function() {
         $( "body" ).removeClass( "modal-open" );
     });
 });
+}
