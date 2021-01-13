@@ -1,13 +1,14 @@
 # Site
 name: "ANNE"
 title: "ANNE의 보물상자"
-description: "좋은 상품들을 고르고 골라서 소개하는 블로그입니다."
+description: "보물같은 상품들만 엄선해 모아 놓았습니다."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /goods
+baseurl: /
+url: "https/mytincase.github.io"
 google_analytics: 'G-5ZWB61HE2R'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+#disqus: 'demowebsite'
+# mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
 
@@ -16,12 +17,12 @@ authors:
   anne:
     name: ANNE
     display_name: ANNE    
-    avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    # avatar: 'assets/images/avatar.png'
+    # gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: mytincase@gmail.com
     web: https://mytincase.github.io/goods
-    twitter: 
-    description: "좋은 상품들을 찾는데 보람을 가진 블로거입니다."
+    # twitter: 
+    description: "보물같은 상품들을 찾기 위해 노력합니다."
 
 # Plugins
 plugins:
@@ -40,7 +41,7 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
-paginate: 12
+paginate: 15
 paginate_path: /page:num/
     
 # Other
