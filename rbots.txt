@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mytincase.github.io/sitemap.xml
