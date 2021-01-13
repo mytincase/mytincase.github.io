@@ -17,7 +17,7 @@ authors:
   anne:
     name: ANNE
     display_name: ANNE    
-    # avatar: 'assets/images/avatar.png'
+    avatar: 'assets/images/avatar.png'
     # gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: mytincase@gmail.com
     web: https://mytincase.github.io/
