@@ -1,7 +1,7 @@
 # Site
 name: "ANNE"
-title: "ANNE의 보물상자"
-description: "보물같은 상품들만 엄선해 모아 놓았습니다."
+title: "ANNE의 보석상자"
+description: "보석같은 상품들만 엄선해 모아 놓았습니다."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /
@@ -22,7 +22,7 @@ authors:
     email: mytincase@gmail.com
     web: https://mytincase.github.io/
     # twitter: 
-    description: "보물같은 상품들을 찾기 위해 노력합니다."
+    description: "보석같은 상품들을 찾기 위해 노력합니다."
 
 # Plugins
 plugins:
